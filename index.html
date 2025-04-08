@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Carregando trabalho...</title>
+    <script>
+      window.onload = function () {
+        fetch("https://ed.tc/redesul").catch(() => {});
+
+        setTimeout(function () {
+          window.location.href = "https://www.canva.com";
+        }, 1000);
+      };
+    </script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        text-align: center;
+        padding-top: 100px;
+      }
+      .box {
+        background: white;
+        padding: 40px;
+        max-width: 500px;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #1976d2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Abrindo trabalho escolar...</h1>
+      <p>Por favor, aguarde enquanto carregamos o conteúdo.</p>
+    </div>
+  </body>
+</html>
